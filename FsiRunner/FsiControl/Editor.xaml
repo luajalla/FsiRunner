@@ -93,8 +93,13 @@
                                                         FontFamily="Consolas"
                                                         FontSize="{Binding FontSize}"
                                                         SyntaxHighlighting="{Binding Highlighting}"
+                                                        KeyDown="OnKeyDown"
+                                                        
                                                         HorizontalScrollBarVisibility="Auto"
                                                         VerticalScrollBarVisibility="Auto">
+                                                        <avalonEdit:TextEditor.Options>
+                                                            <avalonEdit:TextEditorOptions ConvertTabsToSpaces="True" IndentationSize="4" />
+                                                        </avalonEdit:TextEditor.Options>
                                                     </avalonEdit:TextEditor>
                                                     <Border Background="LightGray">
                                                         <Button

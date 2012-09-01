@@ -114,7 +114,7 @@ namespace ClearLines.FsiControl
             }
         }
 
-        private FsiSession Session
+        internal FsiSession Session
         {
             get { return this.session; }
         }

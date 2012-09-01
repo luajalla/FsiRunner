@@ -10,7 +10,7 @@
     {
         public Configuration()
         {
-            this.FsiLocation = @"C:\Program Files (x86)\Microsoft SDKs\F#\3.0\Framework\v4.0\fsi.exe";
+            this.FsiLocation = System.IO.Path.GetFullPath("fsi.exe"); //@"C:\Program Files (x86)\Microsoft SDKs\F#\3.0\Framework\v4.0\fsi.exe";
         }
 
         public string FsiLocation { get; set; }
